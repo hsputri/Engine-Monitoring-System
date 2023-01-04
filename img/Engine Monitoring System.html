@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://localhost/tugas-akhir/form.php -->
+<html style="height: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Engine Monitoring System</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/adminlte.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./Engine Monitoring System_files/responsive.bootstrap4.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/tempusdominus-bootstrap-4.min.css">
+  <!-- daterange picker -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/daterangepicker.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="./Engine Monitoring System_files/select2.min.css">
+  <link rel="stylesheet" href="./Engine Monitoring System_files/select2-bootstrap4.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="./Engine Monitoring System_files/css" rel="stylesheet">
+</head>
+<body class="sidebar-mini modal-open" style="height: auto;">
+<div class="wrapper">
+ <!-- Navbar -->
+ <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="http://localhost/tugas-akhir/form.php#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="breadcrumb-item"><a href="http://localhost/tugas-akhir/form.php#">Home</a></li>
+              <li class="breadcrumb-item active">Forms</li>
+    </ul>
+  <!-- Right navbar links -->
+  <ul class="navbar-nav ml-auto">
+    <div id="clockbox">17/6/2020 3:15:01 PM</div>
+</ul>
+</nav>
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="http://localhost/tugas-akhir/index3.html" class="brand-link">
+      <!-- <img src="dist/img/AdminLTELogo.png"
+           alt="AdminLTE Logo"
+           class="brand-image img-circle elevation-3"
+           style="opacity: .8"> --> 
+      <span class="brand-text font-weight-bold">EMS PT KAI</span>
+    </a>
+
+     <!-- Sidebar -->
+     <div class="sidebar">
+
+    <!-- Sidebar Menu -->
+    
+<nav class="mt-2">
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+        
+        <li class="nav-item has-treeview">
+            <a href="http://localhost/tugas-akhir/datatable.php" class="nav-link ">
+                <i class="nav-icon fas fa-table"></i>
+                <p>
+                    Tabel Suhu
+                </p>
+            </a> 
+        </li><li class="nav-item has-treeview">
+            <a href="http://localhost/tugas-akhir/chart.php" class="nav-link ">
+                <i class="nav-icon fas fa-chart-line"></i>
+                <p>
+                    Grafik Suhu
+                </p>
+            </a> 
+        
+
+        </li><li class="nav-item has-treeview">
+            <a href="http://localhost/tugas-akhir/form.php" class="nav-link active">
+                <i class="nav-icon fas fa-edit"></i>
+                <p>
+                    Forms
+                </p>
+            </a> 
+
+        </li><li class="nav-item has-treeview">
+            <a href="http://localhost/tugas-akhir/report.php" class="nav-link ">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                    Reports
+                </p>
+            </a> 
+        
+        
+                </li><li class="nav-item has-treeview">
+                    <a href="http://localhost/tugas-akhir/model/login.php?op=out" class="nav-link">
+                        <i class="nav-icon fas fa-circle nav-icon"></i>
+                        <p>
+                            Log Out
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-header">INFO</li>
+                <li class="nav-item">
+                    <a href="http://localhost/tugas-akhir/login.php" class="nav-link">
+                        <i class="nav-icon far fa-calendar-alt"></i>
+                        <p>
+                            Maintenance Schedule
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="http://localhost/tugas-akhir/form.php#" class="nav-link">
+                        <i class="nav-icon fas fa-book"></i>
+                        <p>
+                            SOP
+                        </p>
+                    </a>
+                </li>
+                 
+               
+                
+
+    </ul>
+</nav>
+<!-- /.sidebar-menu -->    </div>
+    <!-- /.sidebar -->
+    </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 552px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+        <a href="http://localhost/tugas-akhir/addform.php">
+          <button type="button" class="btn btn-primary">
+          <i class="fa fa-plus"></i>
+          Tambah Form
+          </button>
+        </a>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="row">
+        <div class="col-12">
+
+          <div class="card">
+            <!-- /.card-header -->
+            <div class="card-body">
+              <div id="example1_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer"><div class="row"><div class="col-sm-12 col-md-6"><div class="dataTables_length" id="example1_length"><label>Show <select name="example1_length" aria-controls="example1" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6"><div id="example1_filter" class="dataTables_filter"><label>Search:<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="example1"></label></div></div></div><div class="row"><div class="col-sm-12"><table id="example1" class="table table-bordered table-striped dataTable no-footer dtr-inline" role="grid" aria-describedby="example1_info">
+              <thead>
+    <tr style="text-align:center" role="row"><th class="sorting_asc" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="No: activate to sort column descending" aria-sort="ascending">No</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="No LTG: activate to sort column ascending">No LTG</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="No Kereta: activate to sort column ascending">No Kereta</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label="No Genset: activate to sort column ascending">No Genset</th><th class="sorting" tabindex="0" aria-controls="example1" rowspan="1" colspan="1" aria-label=": activate to sort column ascending"></th></tr>
+    </thead>
+    
+    <tbody style="text-align:center">
+    
+    <tr role="row" class="odd"><td class="sorting_1" tabindex="0">1</td><td></td><td></td><td></td><td><a href="http://localhost/tugas-akhir/form.php#!" class="btn btn-info btn-sm edit-form" data-toggle="modal" data-target="#modal-xl" data-idform="8"><i class="fa fa-edit"></i> Ubah</a>
+        <a href="http://localhost/tugas-akhir/model/pdf.php?id=8" target="_blank" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Cetak</a>
+        <button class="btn btn-danger btn-sm delete-form" idf="8" data-idform="8"><i class="fa fa-trash"></i> Hapus</button></td></tr><tr role="row" class="even"><td class="sorting_1" tabindex="0">2</td><td>23456789</td><td></td><td></td><td><a href="http://localhost/tugas-akhir/form.php#!" class="btn btn-info btn-sm edit-form" data-toggle="modal" data-target="#modal-xl" data-idform="7"><i class="fa fa-edit"></i> Ubah</a>
+        <a href="http://localhost/tugas-akhir/model/pdf.php?id=7" target="_blank" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Cetak</a>
+        <button class="btn btn-danger btn-sm delete-form" idf="7" data-idform="7"><i class="fa fa-trash"></i> Hapus</button></td></tr><tr role="row" class="odd"><td class="sorting_1" tabindex="0">3</td><td>03/QC/BYMRI/III/2020</td><td>P 08001</td><td>04264125</td><td><a href="http://localhost/tugas-akhir/form.php#!" class="btn btn-info btn-sm edit-form" data-toggle="modal" data-target="#modal-xl" data-idform="6"><i class="fa fa-edit"></i> Ubah</a>
+        <a href="http://localhost/tugas-akhir/model/pdf.php?id=6" target="_blank" class="btn btn-success btn-sm"><i class="fa fa-download"></i> Cetak</a>
+        <button class="btn btn-danger btn-sm delete-form" idf="6" data-idform="6"><i class="fa fa-trash"></i> Hapus</button></td></tr></tbody>
+   
+              </table></div></div><div class="row"><div class="col-sm-12 col-md-5"><div class="dataTables_info" id="example1_info" role="status" aria-live="polite">Showing 1 to 3 of 3 entries</div></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="example1_paginate"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="example1_previous"><a href="http://localhost/tugas-akhir/form.php#" aria-controls="example1" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="http://localhost/tugas-akhir/form.php#" aria-controls="example1" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="example1_next"><a href="http://localhost/tugas-akhir/form.php#" aria-controls="example1" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+            </div>
+            <!-- /.card-body -->
+          </div>
+          <!-- /.card -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
+    </div>
+
+<!-- EDIT FORM -->
+<div class="modal fade show" id="modal-xl" aria-modal="true" style="display: block;">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Lembar Pengetesan Akhir Genset</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <form role="form" id="form-edit" action="http://localhost/tugas-akhir/model/updateform.php" method="POST">
+        <div class="modal-body">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                    <label>No. LTG</label>
+                    <input type="text" name="ltg" class="form-control" placeholder="No. LTG">
+                </div>
+                <div class="form-group">
+                    <label>Dipo</label>
+                    <input type="text" name="dipo" class="form-control" placeholder="Dipo">
+                </div>
+                <div class="form-group">
+                    <label>Sifat Perawatan</label>
+                    <input type="text" name="sifat_perawatan" class="form-control" placeholder="Sifat Perawatan">
+                </div>
+                <!-- <div class="form-group">
+                    <label>Sifat Perawatan</label>
+                    <select class="form-control" name="sifat_perawatan" data-placeholder="Pilih Sifat Perawatan">
+                    <option value="">---Pilih Sifat Perawatan---</option>
+                    <option value="1">Preventive Maintenance</option>
+                    <option value="2">Periodic Maintenance</option>
+                    <option value="3">Predictive Maintenance</option>
+                    <option value="4">Corrective Maintenance</option>
+                    </select>
+                </div> -->
+                <!-- select -->
+                <div class="form-group">
+                    <label>Jenis Kereta</label>
+                    <select class="form-control" name="jenis_kereta">
+                    <option>---Pilih Jenis Kereta---</option>
+                    <option>P</option>
+                    <option>MP</option>
+                    <option>KMP</option>
+                    <option>KP</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>No. Seri Kereta</label>
+                    <input type="text" name="seri_kereta" class="form-control" placeholder="No. Seri Kereta">
+                </div>
+              </div> 
+              <div class="col-sm-6">
+                <div class="form-group">
+                    <label>No. Genset</label>
+                    <input type="text" name="nogenset" class="form-control" placeholder="No. Genset">
+                </div>
+                <div class="form-group">
+                    <label>Type Genset</label>
+                    <input type="text" name="typegenset" class="form-control" placeholder="Type Genset">
+                </div>
+                <div class="form-group">
+                    <label>Tanggal Masuk BYMRI</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                        </div>
+                        <input type="text" name="tgl_masuk" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="yyyy/mm/dd" data-mask="" im-insert="false">
+                    </div>
+                    <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+                <div class="form-group">
+                    <label>Tanggal Test</label>
+                    <div class="input-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                        </div>
+                        <input type="text" name="tgl_test" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="yyyy/mm/dd" data-mask="" im-insert="false">
+                    </div>
+                    <!-- /.input group -->
+                </div>
+                <!-- /.form group -->
+                <!-- time Picker -->
+                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <div class="bootstrap-timepicker">
+                                                          <div class="form-group">
+                                                            <label>Waktu Mulai</label>
+
+                                                            <div class="input-group date" id="timepicker" data-target-input="nearest">
+                                                              <input type="text" name="waktu_mulai" class="form-control datetimepicker-input" data-target="#timepicker">
+                                                              <div class="input-group-append" data-target="#timepicker" data-toggle="datetimepicker">
+                                                                  <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                                              </div>
+                                                              </div>
+                                                            <!-- /.input group -->
+                                                          </div>
+                                                          <!-- /.form group -->
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="bootstrap-timepicker">
+                                                            <div class="form-group">
+                                                              <label>Waktu Selesai</label>
+
+                                                              <div class="input-group date" id="timepicker2" data-target-input="nearest">
+                                                                <input type="text" name="waktu_selesai" class="form-control datetimepicker-input" data-target="#timepicker2">
+                                                                <div class="input-group-append" data-target="#timepicker2" data-toggle="datetimepicker">
+                                                                    <div class="input-group-text"><i class="far fa-clock"></i></div>
+                                                                </div>
+                                                                </div>
+                                                              <!-- /.input group -->
+                                                            </div>
+                                                            <!-- /.form group -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <input type="hidden" name="idform" value="6">
+                <button type="submit" name="update" class="btn btn-primary">Save</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>
+      
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  <div class="p-3 control-sidebar-content"><h5>Customize AdminLTE</h5><hr class="mb-2"><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>No Navbar border</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Body small text</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Navbar small text</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar nav small text</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Footer small text</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar nav flat style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar nav legacy style</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar nav compact</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Sidebar nav child indent</span></div><div class="mb-1"><input type="checkbox" value="1" class="mr-1"><span>Main Sidebar disable hover/focus auto expand</span></div><div class="mb-4"><input type="checkbox" value="1" class="mr-1"><span>Brand small text</span></div><h6>Navbar Variants</h6><div class="d-flex"><div class="d-flex flex-wrap mb-3"><div class="bg-primary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-secondary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-info elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-success elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-danger elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-indigo elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-purple elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-pink elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-navy elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lightblue elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-teal elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-cyan elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-dark elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-gray-dark elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-gray elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-light elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-warning elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-white elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-orange elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div></div></div><h6>Accent Color Variants</h6><div class="d-flex"></div><div class="d-flex flex-wrap mb-3"><div class="bg-primary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-warning elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-info elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-danger elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-success elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-indigo elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lightblue elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-navy elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-purple elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-fuchsia elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-pink elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-maroon elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-orange elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lime elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-teal elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-olive elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div></div><h6>Dark Sidebar Variants</h6><div class="d-flex"></div><div class="d-flex flex-wrap mb-3"><div class="bg-primary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-warning elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-info elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-danger elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-success elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-indigo elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lightblue elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-navy elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-purple elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-fuchsia elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-pink elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-maroon elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-orange elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lime elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-teal elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-olive elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div></div><h6>Light Sidebar Variants</h6><div class="d-flex"></div><div class="d-flex flex-wrap mb-3"><div class="bg-primary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-warning elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-info elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-danger elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-success elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-indigo elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lightblue elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-navy elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-purple elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-fuchsia elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-pink elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-maroon elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-orange elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lime elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-teal elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-olive elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div></div><h6>Brand Logo Variants</h6><div class="d-flex"></div><div class="d-flex flex-wrap mb-3"><div class="bg-primary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-secondary elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-info elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-success elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-danger elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-indigo elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-purple elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-pink elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-navy elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-lightblue elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-teal elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-cyan elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-dark elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-gray-dark elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-gray elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-light elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-warning elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-white elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><div class="bg-orange elevation-2" style="width: 40px; height: 20px; border-radius: 25px; margin-right: 10px; margin-bottom: 10px; opacity: 0.8; cursor: pointer;"></div><a href="javascript:void(0)">clear</a></div></div></aside>
+  <!-- /.control-sidebar -->
+<div id="sidebar-overlay"></div></div>
+<!-- ./wrapper -->
+
+
+<!-- jQuery -->
+<script src="./Engine Monitoring System_files/jquery.min.js.download"></script>
+<!-- DataTables -->
+<script src="./Engine Monitoring System_files/jquery.dataTables.min.js.download"></script>
+<script src="./Engine Monitoring System_files/dataTables.bootstrap4.min.js.download"></script>
+<script src="./Engine Monitoring System_files/dataTables.responsive.min.js.download"></script>
+<script src="./Engine Monitoring System_files/responsive.bootstrap4.min.js.download"></script>
+<!-- Bootstrap 4 -->
+<script src="./Engine Monitoring System_files/bootstrap.bundle.min.js.download"></script>
+<!-- Select2 -->
+<script src="./Engine Monitoring System_files/select2.full.min.js.download"></script>
+<!-- InputMask -->
+<script src="./Engine Monitoring System_files/moment.min.js.download"></script>
+<script src="./Engine Monitoring System_files/jquery.inputmask.bundle.min.js.download"></script>
+<!-- date-range-picker -->
+<script src="./Engine Monitoring System_files/daterangepicker.js.download"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="./Engine Monitoring System_files/tempusdominus-bootstrap-4.min.js.download"></script>
+<!-- AdminLTE App -->
+<script src="./Engine Monitoring System_files/adminlte.min.js.download"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="./Engine Monitoring System_files/demo.js.download"></script>
+<!-- page script -->
+<script>
+  $(function () {
+    $("#example1").DataTable({
+      "responsive": true,
+      "autoWidth": false,
+      ajax: 'model/feeds/form.php'
+    });
+    $('#example2').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "responsive": true,
+    });
+  });
+</script>
+<!-- <script type="text/javascript">
+$(document).ready(function () {
+  bsCustomFileInput.init();
+});
+</script> -->
+<script>
+  $(function () {
+    //Datemask2 mm/dd/yyyy
+    $('[data-mask]').inputmask('yyyy/mm/dd', { 'placeholder': 'yyyy/mm/dd' })
+
+    //Date range picker
+    $('#reservation').daterangepicker()
+    //Date range picker with time picker
+    $('#reservationtime').daterangepicker({
+      timePicker: true,
+      timePickerIncrement: 30,
+      locale: {
+        format: 'MM/DD/YYYY hh:mm A'
+      }
+    })
+    //Date range as a button
+    $('#daterange-btn').daterangepicker(
+      {
+        ranges   : {
+          'Today'       : [moment(), moment()],
+          'Yesterday'   : [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+          'Last 7 Days' : [moment().subtract(6, 'days'), moment()],
+          'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+          'This Month'  : [moment().startOf('month'), moment().endOf('month')],
+          'Last Month'  : [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        startDate: moment().subtract(29, 'days'),
+        endDate  : moment()
+      },
+      function (start, end) {
+        $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'))
+      }
+    )
+    //Timepicker
+    $('#timepicker').datetimepicker({
+      format: 'HH:mm'
+    })
+    //Timepicker
+    $('#timepicker2').datetimepicker({
+      format: 'HH:mm'
+    })
+  })
+
+    function GetClock(){
+    var d=new Date();
+    var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+    var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+    if(nhour==0){ap=" AM";nhour=12;}
+    else if(nhour<12){ap=" AM";}
+    else if(nhour==12){ap=" PM";}
+    else if(nhour>12){ap=" PM";nhour-=12;}
+
+    if(nmin<=9) nmin="0"+nmin;
+    if(nsec<=9) nsec="0"+nsec;
+
+    var clocktext=""+ndate+"/"+(nmonth+1)+"/"+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+    document.getElementById('clockbox').innerHTML=clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock,1000);
+</script>
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+ndate+"/"+(nmonth+1)+"/"+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('clockbox').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+
+// update
+$(document).on("click", ".edit-form", function () {
+            var formid = $(this).data('idform');
+            $.ajax({
+                url:`./model/feeds/detail_form.php?idform=${formid}`,
+                type: 'get',
+                success: function(res){
+                    var result = JSON.parse(res).data
+                    $('#form-edit [name="idform"]').val(result[0])
+                    $('#form-edit [name="ltg"]').val(result[1]);
+                    $('#form-edit [name="dipo"]').val(result[2]);
+                    $('#form-edit [name="sifat_perawatan"]').val(result[3]);
+                    $('#form-edit [name="jenis_kereta"]').val(result[4]);
+                    $('#form-edit [name="seri_kereta"]').val(result[5]);
+                    $('#form-edit [name="nogenset"]').val(result[6]);
+                    $('#form-edit [name="typegenset"]').val(result[7]);
+                    $('#form-edit [name="tgl_masuk"]').val( result[8]);
+                    $('#form-edit [name="tgl_test"]').val( result[9]);
+                    $('#form-edit [name="waktu_mulai"]').val( result[10]);
+                    $('#form-edit [name="waktu_selesai"]').val( result[11]);
+                    // $.ajax({
+                    //     url: 'model/feeds/list_satker_by_id.php?id='+result[16],
+                    //     type: 'get',
+                    //     success: function (value) {
+                    //         var data = JSON.parse(value)
+                    //         $('#form-edit .satker').html('<option value=""></option>')
+                    //         for (i in data) {
+                    //             $('#form-edit .satker').append(
+                    //                 '<option value="' + data[i].id + '">' + data[i].satker + '</option>'
+                    //             )
+                    //         }
+                    //         $('#form-edit [name="satuan_kerja"]').val(result[16]).trigger('change')
+                    //     },
+                    //     error: function (res) {
+                    //         console.log(res)
+                    //     }
+                    // })
+                }
+            })
+        });
+        // delete
+        $(document).on("click", ".delete-form", function () {
+            var formid = $(this).data('idform');
+            $.ajax({
+                data: "idf=" + formid,
+                cache: false,
+                dataType: 'html',
+                success: function(data) {
+                    var x;
+                    if (confirm("Anda yakin ingin menghapus?") == true) {
+                        x = window.location.replace("model/delete.php?idf="+ formid);
+                    } 
+                }
+            })
+        });
+</script>
+
+
+<div class="modal-backdrop fade show"></div></body></html>
